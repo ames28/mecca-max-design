@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mecca Max - Contact </title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/byl6hhl.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav id="Nav" class="nav">
+      <a class="right logo" href="index.html">
+        <h4>MECCA MAX</h4>
+      </a>
+
+      <a href="#">Login</a>
+      <a href="#">Sign up</a>
+    </nav>
+    <nav id="topNav" class="top-nav">
+
+      <a href="accessories.html">Accessories</a>
+      <a href="hair.html">Hair</a>
+      <a href="makeup.html">Makeup</a>
+      <a href="nails.html">Nails</a>
+      <a href="skincare.html">Skin Care</a>
+      <a href="theintray.html">The In Tray</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <!-- javascript:void(0); = the href is for javascript and it's not going to take the user anywhere -->
+        <i class="material-icons">menu</i>
+      </a>
+    </nav>
+  </header>
+  <!-- END NAVIGATION -->
+  <!-- BANNER -->
+  <section id="banner">
+    <div>
+      <h4>Holiday gift sets are now available</h4>
+    </div>
+  </section>
+  <!-- END BANNER -->
+  <!-- HEADER -->
+
+  <div class="contact-header">
+
+    <h1>CONTACT US</h1>
+    <br>
+    <br>
+    <p>Need some help? That's what we're here for! If you can't find your answer in our Customer Experience section, please get in touch using one of the below options.</p>
+    <br><br>
+    <p><i>Please note: We’re experiencing a peak in enquiries, so it will take us a little longer than normal to get to everyone, with delays of up to 3-5 business days. We are working hard to respond as soon as we can.</i></p>
+
+  </div>
+
+  <!-- CONTACT FORM -->
+  <section id="contact">
+
+    <div class="contact-form">
+      <form action="action_page.php">
+
+        <label for="name">Contact Name *</label>
+        <input type="text" id="name" name="contactName" placeholder="Your name..">
+
+        <label for="email">E-mail *</label>
+        <input type="text" id="email" name="email" placeholder="Your e-mail..">
+
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="none">None</option>
+          <option value="australia">Australia</option>
+          <option value="new-zealand">New Zealand</option>
+        </select>
+
+        <label for="enquiry">Nature of enquiry *</label>
+        <select id="enquiry" name="enquiry">
+          <option value="purchases">Purchases</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="subject">Description *</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Send Message">
+
+      </form>
+    </div>
+
+    <!-- END CONTACT FORM -->
+
+    <!-- CONTACT INFO -->
+    <div id=contact-info>
+
+      <div>
+        <h4 class="chat"> CHAT WITH CUSTOMER CARE</h4><br>
+        <p>Have an enquiry or feedback? Talk live with our Customer Experience team <u>here</u> <br> <br>
+          Monday to Sunday 10am to midnight NZST</p>
+      </div>
+      <br>
+      <div>
+        <h4 class="phone"> PHONE US</h4><br>
+        <p>Our Customer Experience team are available for over-the-phone support on: <br><br>
+          <u>0800 882 443</u> (free call New Zealand) <br><br>
+          Monday to Sunday 8am - 6pm NZST
+        </p>
+
+
+      </div>
+      <br>
+      <div>
+        <h4 class="email"> EMAIL</h4><br>
+        <p>Complete the form on this page or email us at:<br><br>
+          <u>hello@meccabeauty.co.nz </u><br><br>
+          and we'll be in touch as soon as possible
+        </p>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col">
+        <p>Copyright &copy; 2021 Mecca. All Rights Reserved.</p>
+      </div>
+      <div class="col">
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="col">
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="col">
+        <p>Get social with us</p>
+        <a href="https://www.instagram.com/meccamax/"><img src="images/instagram.png" alt="instagram icon"></a>
+        <a href="https://www.facebook.com/MECCA"><img src="images/facebook.png" alt="facebook icon"></a>
+        <a href="https://au.pinterest.com/meccabeauty/"><img src="images/pinterest.png" alt="pinterest icon"></a>
+        <a href="https://www.youtube.com/channel/UCm6-A3746D0h1382TFjMg4w"><img src="images/youtube.png" alt="youtube icon"></a>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+    function toggleNav() {
+      var x = document.getElementById("topNav");
+      if (x.className === "top-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "top-nav";
+
+      }
+
+    }
+  </script>
+
+
+</body>
+
+</html>
